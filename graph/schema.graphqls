@@ -1,0 +1,17 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type TranslationString {
+  en: String!
+}
+
+type Application {
+  id: ID!
+  slug: String!
+  name: TranslationString!
+}
+
+type Query {
+  applications: [Application!]!
+}
